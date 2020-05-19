@@ -15,6 +15,7 @@
 @import "bootstrap.min.css";
 @import "owl.carousel.min.css";
 @import "owl.theme.default.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css";
 @mixin font-color($c, $ff, $fs, $fw, $lh){
   color: $c;
   font-family: $ff;
@@ -330,6 +331,15 @@ margin-bottom: 50px;
     .form-group .col-md-6:first-child{
       margin-bottom: 30px;
     }
+    .footer-form {
+      .col-md-6:nth-child(1) {
+        padding-right: 0;
+      }
+
+      .col-md-6:nth-child(2) {
+        padding-left: 0;
+      }
+    }
   }
 }
   .navbar-default .navbar-nav > li > a {
@@ -360,8 +370,11 @@ margin-bottom: 50px;
   .navbar-toggle {
     margin-top: 14px;
   }
+  .footer-background .footer-form .btn-primary.btn {
+   margin-right: 0;
+  }
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 375px) {
   .background-image {
     .main-heading__title {
       font-size: 50px;
@@ -370,6 +383,18 @@ margin-bottom: 50px;
 
     .main-heading__text {
       font-size: 19px;
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .background-image {
+    padding: 60px 15px 60px 15px;
+    .main-heading__title {
+      font-size: 44px;
+      line-height: 53px;
+    }
+    .main-heading__text {
+      font-size: 17px;
     }
   }
 }

@@ -4,6 +4,7 @@
 @import url(bootstrap.min.css);
 @import url(owl.carousel.min.css);
 @import url(owl.theme.default.min.css);
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css";
 @font-face {
   font-family: 'Myriad Pro';
   src: url("../fonts/MyriadPro-Regular.eot");
@@ -290,7 +291,11 @@
       .footer-background .footer-information .footer-information__contact {
         margin-bottom: 30px; }
     .footer-background .form-group .col-md-6:first-child {
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+    .footer-background .footer-form .col-md-6:nth-child(1) {
+      padding-right: 0; }
+    .footer-background .footer-form .col-md-6:nth-child(2) {
+      padding-left: 0; } }
 @media only screen and (max-width: 1024px) {
   .navbar-default .navbar-nav > li > a {
     padding: 28px 28px; }
@@ -314,12 +319,23 @@
     padding: 12px 15px; }
 
   .navbar-toggle {
-    margin-top: 14px; } }
-@media only screen and (max-width: 360px) {
+    margin-top: 14px; }
+
+  .footer-background .footer-form .btn-primary.btn {
+    margin-right: 0; } }
+@media only screen and (max-width: 375px) {
   .background-image .main-heading__title {
     font-size: 50px;
     line-height: 57px; }
   .background-image .main-heading__text {
     font-size: 19px; } }
+@media only screen and (max-width: 320px) {
+  .background-image {
+    padding: 60px 15px 60px 15px; }
+    .background-image .main-heading__title {
+      font-size: 44px;
+      line-height: 53px; }
+    .background-image .main-heading__text {
+      font-size: 17px; } }
 
 /*# sourceMappingURL=style-preproc.css.map */
